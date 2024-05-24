@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+        .videoback {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        /* Additional styling for other elements */
+        .row {
+            padding: 20px;
+            color: white;
+        }
+        .header, .footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .column1, .column2 {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted class="videoback">
+        <source src="back.mp4" type="video/mp4">
+        <!-- Add more <source> elements for different video formats -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="row">
+       <div class="header" >
+    <h1>Vishal Patil | Student Scholar VIT</h1></div>
+    </div>
+
+
+    <div class="row">
+        <div class="column1" style="background-color:#aaa;" >
+            <h2>Information</h2>
+            <div id="profile">
+                <div id="image">
+                    <img id="profile-photo" src="ProfilePhoto.jpg" alt="Profile-Image">
+                    <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
+                </div>
+                <br>
+                <br>
+                <p id="name" style="font-size: 20px;font-weight: 800;">VISHAL PATIL<br><span id="email">vishal.patil22@vit.edu</span></p>
+                <p id="designation">Student Scholar<br><span id="college">Vishwkarma Institute Of Technology, Pune
+                    </span></p>
+                <div id="social-links"><a href="#"><i class="fab fa-facebook-f stroke-transparent"></i></a><a><i
+                            class="fab fa-twitter stroke-transparent"></i></a><a><i
+                            class="fab fa-linkedin-in stroke-transparent"></i></a><a><i
+                            class="fab fa-github stroke-transparent"></i></a></div>
+            
+                <hr width="100%">
+                <br>
+                <div id="about">
+                    <p style="display:inline;"></p>
+                    <a href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                </div>
+                <p id="year-graduation">Expected Year of Graduation<br><strong>June, 2025</strong></p>
+                <p id="education">Education<br><strong>Computer Engineering, VIT Pune</strong>
+                </p>
+            
+                <p id="telephone">Telephone<br><strong>+91 9022517871</strong></p>
+            
+            </div>
+        </div>
+        <div class="column2" style="background-color:#bbb;">
+            <h2>Details</h2>
+            <div id="info-cards">
+                <div class="card">
+                    <h3><i class=""></i> 🎯&nbsp;&nbsp;&nbsp;ABOUT</h3>
+                    <div class="about">
+                        <p style="">Passionate about learning new skills & implementing those skills in my project.
+                            I build WebApps and Websites using MERN
+                            stack. Working for myself to improve my skills. Love to work in collaboration</p>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <h3><i class=""></i> 🎯&nbsp;&nbsp;&nbsp;Education</h3>
+                    <div class="education">
+                        <p>Bachelor of Technology in Computer Engineering <br>
+                            Vishwakarma Institute of Technology, Pune, <br> CGPA: 8.76/10.00</p>
+                        
+                        <p>Diploma in Information Technology <br>
+                            Government Polytechnique, Nashik, Maharashtra <br>
+                            Percentage: 94.81%</p>
+                        
+                        <p>SSC, Class X <br>
+                            Maratha Highschool, Nashik, Maharashtra <br>
+                            Percentage: 90.20%</p>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap stroke-transparent"></i> 🎯&nbsp;&nbsp;&nbsp;Work</h3>
+                    <div class="work">
+                        <p>
+                            Full Stack Web Intern (MEAN Stack) <br>
+                            Reboot CAS <br>
+                            * Developed Angular web application, with Nodejs as backend. <br>
+                            * Built two commercial websites: one for customer outreaching and one for dairy farms, both with all of the
+                            e-commerce &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; functionality.Currently exploring the depths of the Angular Framework.                   
+                        </p>
+
+
+                    </div>
+                   
+                   
+                </div>
+
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap stroke-transparent"></i> 🎯&nbsp;&nbsp;&nbsp;Achievement</h3>
+                    <div class="work">
+                        <p>🏆 Winners of Rajasthan Police Hackathon, Jaipur </p>
+                        <video controls autoplay="true" style="height: 50%; width: 100%;">
+                            <source src="Rajasthan_Police_Hackathon_1.0_RJPOLICE_HACK_1304.mp4" type="video/mp4">
+                            Vishal Patil RJPOLICE Hackethon Winners
+                        </video>
+                
+                
+                    </div>
+                
+                
+                </div>
+
+
+                <div class="card">
+                    <h3><i class="fas fa-briefcase stroke-transparent"></i> 🎯&nbsp;&nbsp;&nbsp;Projects</h3>
+                    <ul>
+                        <li>
+                            <p class="tags">Data Visualization in Java <span>OOP, Swing, GUI Building, SQL Commands</span>
+                                <br><span>March 2023 — May
+                                    2023</span></span>
+                            </p>
+            
+                            <p>📌 Developed a desktop data visualization system for student marking system. <br>
+                                📌 Incorporated a GUI using JavaFX i.e., Pie chart, Bar graph, Line chart.</p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        </li>
+                        <li>
+                            <p class="tags">Multithreaded Video Conferencing application using UDP Protocol<br> <span>Java, Socket,
+                                    WebRTC, JavaCV</span><br><span>Aug 2023 — Present</span></span></p>
+                            <p>📌 Developing a client server multithreaded application use for video conferencing. <br>
+                                📌 Website Multiple clients can stream their camera feed with voice for interactive meeting.
+                            </p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        </li>
+                        <li>
+                            <p class="tags">BitLearn Summarization System <br><span>Python, NLP, IBM Watson, MySQL, CMD</span><br>
+                                <span>2022 —Feb2023
+                                </span></span></p>
+                            <p>📌 Website that helps teachers post their lectures in form of Video which is converted to summarized
+                                format. <br>
+                                📌 Built a web portal accessible by both Teacher and Student.
+                            </p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        </li>
+                        <li>
+                            <p class="tags">Driver Intoxication detection and alerting system <br> <span>Arduino, Nodemcu, Sensors,
+                                    serial communication, ESP Cam, Python</span><br><span>March 2023 —June 20233</span></span></p>
+                            <p>📌 MQ3,LM392D Driver,motors,Neo 6M,Arduino and WiFi communication based project for timely detection
+                                and avoidance of
+                                fatal accidents by reducing speed gradually and contacting nearest police authorities. <br>
+                                📌 Machine learning based Traffic sign detection system with audio functionality to keep driver aware
+                                about external
+                                environment.
+                            </p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        </li>
+            
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Technical Skills</h3>
+                    <ul>
+                        <li style="list-style: none;">
+                            <p class="tags">
+                                📌Proficient Skills: <br><span>Java, CPP, JavaScript, MySQL, MongoDB, Communication
+                                    Network, GitHub</span>
+                                <br>📌Familiar Skills: <br> <span>Python, Angular, Node.js, Computer Hardware (IOT)</span>
+                                <br>📌 Languages: <br> <span>English, Hindi, Marathi</span>
+            
+                            </p>
+                            <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
+                        </li>
+            
+                    </ul>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+    <!-- <div class="footer">
+        <h4>@Copyrights reserved &nbsp; <span style="color:aquamarine;font-weight: 500;">Vppatil</span></h4>
+    </div> -->
+    </div>
+    </div>
+</body>
+</html>

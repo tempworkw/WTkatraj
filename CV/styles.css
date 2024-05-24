@@ -1,0 +1,111 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Background video */
+.videoback {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Column layout styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+p{
+    color: black;
+}
+
+h2
+{
+    color: coral;
+    font-weight: 800;
+}
+
+.column1,
+.column2 {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+/* Profile image styles */
+#image,
+#profile-photo {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Social links styles */
+#social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Card styles */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Edit icon styles */
+.edit {
+    float: right;
+    color: #007bff; /* Bootstrap's primary color */
+    cursor: pointer;
+}
+
+/* Tags styles */
+.tags {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .column1, .column2 {
+        flex: 0 0 100%;
+    }
+}
